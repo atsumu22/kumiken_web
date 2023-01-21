@@ -140,7 +140,7 @@
           // line-height: 5rem;
           color: white;
           z-index: 2;
-          filter: drop-shadow(1px 1px 8px #c0c0c0);
+          // filter: drop-shadow(1px 1px 8px #c0c0c0);
           @include animation(
             $name: appear,
             $duration: 5s
