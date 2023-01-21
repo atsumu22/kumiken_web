@@ -1,0 +1,101 @@
+@use "../globals/" as *;
+
+.about__item {
+  &__content {
+    &__text {
+      & p {
+        @include mq(lg) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.works__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include mq(lg) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__design, &__installation, &__maintenance, &__fabrication {
+      width: 49%;
+      & h3 {
+        font-size: 1.8rem;
+        &:hover {
+          scale: 1.4;
+        }
+      }
+    }
+  }
+}
+
+
+.project__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    @include mq(lg) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      & .card-trip {
+        width: 49%;
+      }
+    }
+  }
+  & .projectlist__year {
+    width: 30%;
+    margin: 0 auto;
+  }
+}
+
+
+.contact__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+  @include mq(lg) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    & iframe {
+      width: 49%;
+    }
+    &__text {
+      width: 49%;
+      & > h3 {
+        scale: 1.8rem;
+        margin-bottom: 30px;
+      }
+      & > p {
+        scale: 1.25rem;
+      }
+    }
+  }
+  &__text {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+#about {
+  padding-top: 20px;
+}
+
+#works {
+  padding-top: 20px;
+}
+
+#projects {
+  padding-top: 20px;
+}
+
+#contact {
+  padding-top: 20px;
+}

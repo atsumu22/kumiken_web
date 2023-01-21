@@ -1,0 +1,42 @@
+@use "../globals/" as *;
+
+.navbar {
+  height: 40px;
+  @include mq(md) {
+    height: 70px;
+  }
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0 20px rgb(0 0 0 / 60%);
+  & img {
+    height: 100%;
+  }
+  &.menu-open {
+  box-shadow: none;
+  }
+}
+
+.navbar-menu {
+  display: none;
+  @include mq(lg) {
+    display: block;
+  }
+  & .list-inline {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    & > li {
+      display: inline-block;
+      font-size: 1.5rem;
+      color: white;
+      margin-right: 20px;
+      & > a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}

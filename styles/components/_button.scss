@@ -1,0 +1,49 @@
+@use '../globals/variables' as *;
+
+.button {
+  width: 250px;
+  margin: 0 auto;
+  display: inline-block;
+  text-decoration: none;
+  padding: 18px 50px;
+  border-radius: 5px;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  &:hover {
+    color: white;
+  }
+  &::after {
+    background: #fff;
+    content: "";
+    height: 200px;
+    left: -90px;
+    opacity: .5;
+    position: absolute;
+    top: -63px;
+    -webkit-transform: rotate(41deg);
+    transform: rotate(41deg);
+    -webkit-transition: all 1.5s
+      cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.5s
+      cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 1;
+  }
+  &:hover:after {
+    left: 120%;
+    -webkit-transition: all 1.5s
+      cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.5s
+      cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+.btn-rotate {
+  cursor: pointer;
+  transition: all 0.6s ease;
+  &.rotated {
+    transform: rotate(90deg);
+  }
+}

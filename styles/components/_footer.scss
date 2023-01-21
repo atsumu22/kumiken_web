@@ -1,0 +1,13 @@
+.footer {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  & img {
+    height: 60px;
+    width: auto;
+    margin: 0 auto;
+  }
+  & p {
+    margin-top: 18px;
+  }
+}

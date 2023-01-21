@@ -1,0 +1,41 @@
+@use "../globals/index" as *;
+@use "../globals/mq" as *;
+@use "../globals/variables" as *;
+@import url('https://fonts.googleapis.com/css2?family=Coda&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+.bg-red {
+  background-color: $cKumikenRed;
+}
+
+.bg-grey {
+  background-color: $cKumikenGrey;
+}
+
+h1, h2, h3 {
+  font-family: 'Coda', 'Lora', serif;
+}
+
+a {
+  font-family: 'Coda', 'Lora', serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: 'Coda', 'Lora', serif;
+  font-size: 1.2rem;
+}
+
+li {
+  font-family: 'Coda', 'Lora', serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  & i {
+    color: $cKumikenRed;
+  }
+}
+
+.fa-phone-volume {
+  transform: rotate(-45deg);
+}

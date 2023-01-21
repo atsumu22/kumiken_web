@@ -1,0 +1,94 @@
+@use "../globals/" as *;
+
+.hamburger {
+  cursor: pointer;
+  @include mq(xl) {
+    display: none;
+  }
+  span {
+    width: 20px;
+    height: 2px;
+    margin-bottom: 4px;
+    @include mq(md) {
+      width: 35px;
+      height: 2px;
+      margin-bottom: 9px;
+    }
+    display: block;
+    position: relative;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &.menu-open {
+    & > span {
+      &:nth-child(1) {
+        // display: none;
+        width: 20px;
+        transform: translateY(6px) rotate(-45deg);
+        @include mq(md){
+          width: 40px;
+          transform: translateY(11px) rotate(-45deg);
+        }
+      }
+      &:nth-child(2) {
+        width: 20px;
+        transform: rotate(45deg);
+        @include mq(md){
+          width: 40px;
+          transform: translateY(11px) rotate(-45deg);
+        }
+      }
+      &:nth-child(3) {
+        // display: none;
+        width: 20px;
+        transform: translateY(-6px) rotate(45deg);
+        @include mq(md){
+          width: 40px;
+          transform: translateY(11px) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+.hamburger-hidden {
+  display: none;
+  position: relative;
+  // transform: translateY(-100vh);
+  // overflow: hidden;
+  position: fixed;
+  z-index: 90;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+
+  &__content {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    & > .list-none {
+      list-style: none;
+      padding-left: 0;
+      & > li {
+        margin: 15px;
+        font-size: 1.5rem;
+        color: white;
+        & > a {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  &.menu-open {
+    display: inline-block;
+  }
+}
