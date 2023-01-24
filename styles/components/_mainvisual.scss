@@ -2,7 +2,7 @@
 @use '../globals/mq' as *;
 
 .mainvisual {
-  background-image: url(../../Images/mainvisual.jpeg);
+  background-image: url(https://github.com/atsumu22/kumiken_web/blob/master/Images/mainvisual.jpeg);
   height: 100vh;
   background-size: cover;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -128,7 +128,7 @@
       justify-content: center;
       text-align: center;
       z-index: 1;
-      // box-shadow: 0 0 15px rgb(255 255 255 / 30%);
+      box-shadow: 0 0 15px rgb(255 255 255 / 30%);
 
       & .textarea {
         width: 100%;
