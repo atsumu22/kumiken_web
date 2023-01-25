@@ -68,9 +68,9 @@
 
   &__content {
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     & > .list-none {
       list-style: none;
       padding-left: 0;
