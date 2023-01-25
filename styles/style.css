@@ -65,13 +65,13 @@
   height: 100vh;
   width: 100%;
   text-align: center;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 .hamburger-hidden__content {
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 .hamburger-hidden__content > .list-none {
   list-style: none;
@@ -368,7 +368,6 @@ li i {
   font-size: 2.5rem;
   color: white;
   z-index: 2;
-  filter: drop-shadow(1px 1px 8px #c0c0c0);
   -webkit-animation-name: appear;
           animation-name: appear;
   -webkit-animation-duration: 5s;
