@@ -21,12 +21,6 @@
     flex-wrap: wrap;
     &__design, &__installation, &__maintenance, &__fabrication {
       width: 49%;
-      & h3 {
-        font-size: 1.8rem;
-        &:hover {
-          scale: 1.4;
-        }
-      }
     }
   }
 }

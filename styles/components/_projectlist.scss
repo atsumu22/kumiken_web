@@ -1,4 +1,8 @@
 .projectlist__year {
+  // left: 50%;
+  // position: relative;
+  // transform: translateX(25%);
+  padding:auto 0;
   list-style: none;
   padding-left: 0;
   text-align: left;
@@ -8,6 +12,13 @@
 }
 
 .projectlist__content {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
   & > li {
     font-size: 0.95rem;
   }
