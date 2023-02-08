@@ -6,11 +6,9 @@ const textboxes = document.querySelectorAll(".card-works__text");
       textbox.addEventListener("touchstart", (event) => {
         event.currentTarget.classList.toggle('clicked');
       });
-  } else {
-      textboxes.forEach((textbox) => {
+    } else {
       textbox.addEventListener("click", (event) => {
         event.currentTarget.classList.toggle('clicked');
       });
-    });
-  }
-});
+    }
+  });
