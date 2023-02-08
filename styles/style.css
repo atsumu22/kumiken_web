@@ -608,7 +608,7 @@ li i {
   font-size: 1.8rem;
   position: absolute;
   top: 50%;
-  right: 20%;
+  right: 28%;
   transform: translate(50%, -50%);
 }
 @media screen and (min-width: 960px) {
@@ -652,6 +652,11 @@ li i {
   margin: 0 auto;
   background-color: #fc0805;
 }
+@media screen and (min-width: 960px) {
+  .list-content__divider {
+    height: 250px;
+  }
+}
 .list-content__left {
   overflow: hidden;
   text-align: right;
@@ -670,7 +675,7 @@ li i {
   animation-fill-mode: forwards;
 }
 .list-content__left > ul > li {
-  font-size: 0.75rem;
+  font-size: 0.78rem;
 }
 @media screen and (min-width: 960px) {
   .list-content__left > ul > li {
@@ -703,7 +708,7 @@ li i {
   animation-fill-mode: forwards;
 }
 .list-content__right > ul > li {
-  font-size: 0.75rem;
+  font-size: 0.78rem;
 }
 @media screen and (min-width: 960px) {
   .list-content__right > ul > li {

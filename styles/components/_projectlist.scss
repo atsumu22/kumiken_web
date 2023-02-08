@@ -25,7 +25,7 @@
       font-size: 1.8rem;
       position: absolute;
       top: 50%;
-      right: 20%;
+      right: 28%;
       transform: translate(50%, -50%);
     }
   }
@@ -56,6 +56,9 @@
     content: "";
     width: 4px;
     height: 320px;
+    @include mq(md) {
+      height: 250px;
+    }
     display: inline-block;
     margin: 0 auto;
     background-color: $cKumikenRed;
@@ -69,7 +72,7 @@
     transform: translate(-105%, -50%);
     & > ul {
       & > li {
-        font-size: 0.75rem;
+        font-size: 0.78rem;
         @include mq(md) {
           font-size: 1rem;
           }
@@ -97,7 +100,7 @@
     transform: translate(35%, -50%);
     & > ul {
       & > li {
-        font-size: 0.75rem;
+        font-size: 0.78rem;
         @include mq(md) {
           font-size: 1rem;
           }
