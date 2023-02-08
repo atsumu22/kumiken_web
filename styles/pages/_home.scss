@@ -25,11 +25,8 @@
   }
 }
 
-
 .project__item {
   text-align: center;
-  display: flex;
-  flex-direction: column;
   &__card {
     display: flex;
     flex-direction: column;
@@ -41,10 +38,6 @@
         width: 49%;
       }
     }
-  }
-  & .projectlist__year {
-    width: 30%;
-    margin: 0 auto;
   }
 }
 

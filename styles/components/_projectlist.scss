@@ -1,25 +1,112 @@
+@use "../globals/mixin" as *;
+@use "../globals/variables" as *;
+
+
 .projectlist__year {
-  // left: 50%;
-  // position: relative;
-  // transform: translateX(25%);
-  padding:auto 0;
   list-style: none;
   padding-left: 0;
-  text-align: left;
-  & > li {
-    font-size: 1.3rem;
+  width: 100%;
+  text-align: center;
+  &__item {
+    position: relative;
+    & .turn-button {
+      & > i {
+        font-size: 2rem;
+      }
+    }
+    & .year {
+      font-size: 1.8rem;
+      position: absolute;
+      top: 50%;
+      right: 45%;
+      transform: translate(50%, -50%);
+    }
   }
 }
 
 .projectlist__content {
   list-style: none;
   padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: absolute;
+  top: 0;
+  left: -50%;
   width: 400px;
   margin: 0 auto;
   & > li {
     font-size: 0.95rem;
   }
+}
+
+.liststyle-none {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-content {
+  position: relative;
+  padding-left: 0;
+  &__divider {
+    content: "";
+    width: 4px;
+    height: 320px;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: $cKumikenRed;
+  }
+  &__left {
+    overflow: hidden;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-105%, -50%);
+    & > ul {
+      & > li {
+        font-size: 1rem;
+      }
+      @include animation(
+      $name: list-slide-left,
+      $duration: 1.2s,
+      );
+      @keyframes list-slide-left {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+    }
+  }
+  &__right {
+    overflow: hidden;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(35%, -50%);
+    & > ul {
+      & > li {
+        font-size: 1rem;
+      }
+      @include animation(
+      $name: list-slide-right,
+      $duration: 1s,
+      );
+      @keyframes list-slide-right {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+    }
+  }
+}
+
+
+.text-right {
+  padding-left: 40%;
+  opacity: 0.7;
 }

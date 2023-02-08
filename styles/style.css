@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Coda&family=Lora:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coda&family=Lora:ital,wght@0,400;0,700;1,400&family=Noto+Sans+HK:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap");
 .hamburger {
   cursor: pointer;
 }
@@ -147,22 +147,22 @@
 }
 
 h1, h2, h3 {
-  font-family: "Coda", "Lora", serif;
+  font-family: "Coda", "Lora", serif, "Noto Sans JP", "Noto Sans HK", sans-serif;
 }
 
 a {
-  font-family: "Coda", "Lora", serif;
+  font-family: "Coda", "Lora", serif, "Noto Sans JP", "Noto Sans HK", sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
 }
 
 p {
-  font-family: "Coda", "Lora", serif;
+  font-family: "Lora", "Coda", "Noto Sans JP", serif, "Noto Sans HK", sans-serif;
   font-size: 1.2rem;
 }
 
 li {
-  font-family: "Coda", "Lora", serif;
+  font-family: "Coda", "Noto Sans JP", "Lora", serif, "Noto Sans HK", sans-serif;
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -228,28 +228,13 @@ li i {
   left: 0;
   transform: translateX(-100%);
   transition: all 1s ease;
-  -webkit-animation-name: bd-side-transition;
-          animation-name: bd-side-transition;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes bd-side-transition {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+  animation-name: bd-side-transition;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 @keyframes bd-side-transition {
   0% {
@@ -264,20 +249,13 @@ li i {
   left: 0;
   transform: translateX(-100%);
   transition: all 1s ease;
-  -webkit-animation-name: bd-side-transition;
-          animation-name: bd-side-transition;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: bd-side-transition;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 @keyframes bd-side-transition {
   0% {
@@ -299,28 +277,13 @@ li i {
   left: 0;
   transition: all 2s ease;
   transform: translateY(-100%);
-  -webkit-animation-name: bd-upright-transition;
-          animation-name: bd-upright-transition;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes bd-upright-transition {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
+  animation-name: bd-upright-transition;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 @keyframes bd-upright-transition {
   0% {
@@ -335,20 +298,13 @@ li i {
   right: 0;
   transition: all 1s ease;
   transform: translateY(-100%);
-  -webkit-animation-name: bd-upright-transition;
-          animation-name: bd-upright-transition;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: bd-upright-transition;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 @keyframes bd-upright-transition {
   0% {
@@ -368,28 +324,13 @@ li i {
   font-size: 2.5rem;
   color: white;
   z-index: 2;
-  -webkit-animation-name: appear;
-          animation-name: appear;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes appear {
-  0% {
-    transform: translateY(200%);
-  }
-  100% {
-    transform: translateY(80%);
-  }
+  animation-name: appear;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 @keyframes appear {
   0% {
@@ -400,11 +341,6 @@ li i {
   }
 }
 @media screen and (min-width: 960px) {
-  @-webkit-keyframes appear {
-    100% {
-      transform: translateY(0%);
-    }
-  }
   @keyframes appear {
     100% {
       transform: translateY(0%);
@@ -533,7 +469,7 @@ li i {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 .card-trip > img {
-  height: 200px;
+  height: 260px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -570,7 +506,7 @@ li i {
 }
 .section-subtitle h2:after {
   content: "";
-  width: 250px;
+  width: 320px;
   height: 7px;
   display: inline-block;
   position: absolute;
@@ -580,28 +516,13 @@ li i {
   background-color: #fc0805;
 }
 .section-subtitle h2.inview::after {
-  -webkit-animation-name: bar-slide;
-          animation-name: bar-slide;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes bar-slide {
-  0% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  animation-name: bar-slide;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 @keyframes bar-slide {
   0% {
@@ -672,26 +593,115 @@ li i {
 }
 
 .projectlist__year {
-  padding: auto 0;
   list-style: none;
   padding-left: 0;
-  text-align: left;
+  width: 100%;
+  text-align: center;
 }
-.projectlist__year > li {
-  font-size: 1.3rem;
+.projectlist__year__item {
+  position: relative;
+}
+.projectlist__year__item .turn-button > i {
+  font-size: 2rem;
+}
+.projectlist__year__item .year {
+  font-size: 1.8rem;
+  position: absolute;
+  top: 50%;
+  right: 45%;
+  transform: translate(50%, -50%);
 }
 
 .projectlist__content {
   list-style: none;
   padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: absolute;
+  top: 0;
+  left: -50%;
   width: 400px;
   margin: 0 auto;
 }
 .projectlist__content > li {
   font-size: 0.95rem;
+}
+
+.liststyle-none {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-content {
+  position: relative;
+  padding-left: 0;
+}
+.list-content__divider {
+  content: "";
+  width: 4px;
+  height: 320px;
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #fc0805;
+}
+.list-content__left {
+  overflow: hidden;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-105%, -50%);
+}
+.list-content__left > ul {
+  animation-name: list-slide-left;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.list-content__left > ul > li {
+  font-size: 1rem;
+}
+@keyframes list-slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.list-content__right {
+  overflow: hidden;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(35%, -50%);
+}
+.list-content__right > ul {
+  animation-name: list-slide-right;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.list-content__right > ul > li {
+  font-size: 1rem;
+}
+@keyframes list-slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.text-right {
+  padding-left: 40%;
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 960px) {
@@ -717,8 +727,6 @@ li i {
 
 .project__item {
   text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 .project__item__card {
   display: flex;
@@ -733,10 +741,6 @@ li i {
   .project__item__card .card-trip {
     width: 49%;
   }
-}
-.project__item .projectlist__year {
-  width: 30%;
-  margin: 0 auto;
 }
 
 .contact__item {
