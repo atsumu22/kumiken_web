@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kumiken Company Limited</title>
+  <script src="scripts/vendors/pace.js"></script>
+  <link rel="stylesheet" href="loader.css">
   <meta name="description" content="Welcome to Kumiken's Web page. We are a commercial kitchen contructor in Hong Kong.">
   <meta name="theme-color" content="#fc0805" >
   <link rel="shortcut icon" href="Images/favicon_logo.png">
@@ -14,385 +16,389 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-  <div class="bg-grey">
-    <section class="navbar bg-red d-flex wrapper position-fixed align-items-center">
-      <img class="header-logo" src="images/logo.png" alt="">
-      <div class="navbar-menu">
-        <ul class="list-inline">
-          <li class="link-tag"><a href="#about">ABOUT US</a></li>
-          <li class="link-tag"><a href="#works">WORKS</a></li>
-          <li class="link-tag"><a href="#projects">PROJECTS</a></li>
-          <li class="link-tag"><a href="#contact">CONTACT</a></li>
-        </ul>
+  <div id="global-container">
+    <div class="bg-grey">
+      <section class="navbar bg-red d-flex wrapper position-fixed align-items-center">
+        <a class="link-tag" href="#home"><img class="header-logo" src="images/logo.png" alt=""></a>
+        <div class="navbar-menu">
+          <ul class="list-inline">
+            <li class="link-tag"><a href="#about">ABOUT US</a></li>
+            <li class="link-tag"><a href="#works">WORKS</a></li>
+            <li class="link-tag"><a href="#projects">PROJECTS</a></li>
+            <li class="link-tag"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+      <div class="hamburger-hidden bg-red">
+        <div class="hamburger-hidden__content">
+          <ul class="list-none">
+            <li class="link-tag"><a href="#about">ABOUT US</a></li>
+            <li class="link-tag"><a href="#works">WORKS</a></li>
+            <li class="link-tag"><a href="#projects">PROJECTS</a></li>
+            <li class="link-tag"><a href="#contact">CONTACT</a></li>
+          </ul>
+          <a class="link-tag" href="#home"><img src="images/logo_full.png" alt=""></a>
+        </div>
       </div>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </section>
-    <div class="hamburger-hidden bg-red">
-      <div class="hamburger-hidden__content">
-        <ul class="list-none">
-          <li class="link-tag"><a href="#about">ABOUT US</a></li>
-          <li class="link-tag"><a href="#works">WORKS</a></li>
-          <li class="link-tag"><a href="#projects">PROJECTS</a></li>
-          <li class="link-tag"><a href="#contact">CONTACT</a></li>
-        </ul>
-        <img src="images/logo_full.png" alt="">
-      </div>
+      <section class="mainvisual" id="home">
+        <div class="mainvisual__item container">
+          <div class="mainvisual__item__textbox">
+            <span class="bd-top side"></span>
+            <span class="bd-left upright"></span>
+            <span class="bd-right upright"></span>
+            <span class="bd-bottom side"></span>
+            <div class="textarea">
+              <h1>KITCHEN<h1>
+            </div>
+            <div class="textarea">
+              <h1>ALL-ROUNDER</h1>
+            </div>
+            <div class="textarea">
+              <h1>KUMIKEN</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about container" id="about">
+        <div class="section-subtitle">
+          <h2 class="section-title">ABOUT US</h2>
+        </div>
+        <div class="about__item">
+          <div class="about__item__content">
+            <div class="about__item__content__text">
+              <p>In 1990, being one of the pioneer in the commercial kitchen solutions history, Kumi Ken COMPANY LIMITED was established.<br>Kumi Ken provides custom made stainless steel appliances such as Hydro-Vent Hood System, S.S. stoves, S.S. cabinets, S.S. tables and S.S sinks etc.<br>Design, supply and install for restaurants, catering services business with wide range of quality equitments.<br>
+                Since, Kumi Ken Co. Ltd. was focused on the Stainless Steel products for Chinese Restaurants Projects in Hong Kong and China.<br>To catch with the faster growth in these areas, and Commercial Refrigerators, Hydro-Vent Hood System, Auto-noodel boiler, Oven etc.were needed.<br>KumiKen extends the business scopes to Janpanese Restaurants, Korean Restaurants and Chain-Supermarket.<br>
+                Nowaday, Following the trend of F&B industry, Automated Food Delivery System, especially “Bullet Train Delivery System (Sushi Train)” and “Sushi Conveyor Belt”.<br>We provide a "One-stop" Solution for all architecture and kitchen design firms.</p>
+            </div>
+            <div class="about__item__content__img">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="works container" id="works">
+        <div class="section-subtitle">
+          <h2 class="section-title">WORKS</h2>
+        </div>
+        <div class="works__item">
+          <div class="works__item__design">
+            <div class="card-works" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://source.unsplash.com/M_NvKwSOkug)">
+              <div class="card-works__text">
+                <div class="default">
+                  <h3>Kitchen Design</h3>
+                </div>
+                <div class="hovering">
+                  <p>We can make your design from scrach We can make your design from scrac We can make your design from scrac We can make your design from scrac</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="works__item__installation">
+            <div class="card-works" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://source.unsplash.com/NfG4rXmceFM)">
+              <div class="card-works__text">
+                <div class="default">
+                  <h3>Equipment Installation</h3>
+                </div>
+                <div class="hovering">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, similique! Porro assumenda mollitia pariatur id quis magnam nemo, natus reprehenderit cumque placeat numquam maxime eius rerum est quaerat delectus quisquam?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="works__item__maintenance">
+            <div class="card-works" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://source.unsplash.com/32PpagSzeGs)">
+              <div class="card-works__text">
+                <div class="default">
+                  <h3>Maintenance</h3>
+                </div>
+                <div class="hovering">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, similique! Porro assumenda mollitia pariatur id quis magnam nemo, natus reprehenderit cumque placeat numquam maxime eius rerum est quaerat delectus quisquam?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="works__item__fabrication">
+            <div class="card-works" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://source.unsplash.com/SVfXlChg9HI)">
+              <div class="card-works__text">
+                <div class="default">
+                  <h3>Stainless Fabrication</h3>
+                </div>
+                <div class="hovering">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, similique! Porro assumenda mollitia pariatur id quis magnam nemo, natus reprehenderit cumque placeat numquam maxime eius rerum est quaerat delectus quisquam?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project container" id="projects">
+        <div class="section-subtitle">
+          <h2 class="section-title">PROJECTS</h2>
+        </div>
+        <div class="project__item">
+          <div class="project__item__card">
+            <div class="card-trip">
+              <img src="/Images/Watami_TW.jpeg" />
+              <div class="card-trip-infos">
+                <div>
+                  <h2>WATAMI YAKINIKU</h2>
+                  <p>2022</p>
+                </div>
+                <h2 class="card-trip-pricing">@Tsuen Wan</h2>
+              </div>
+            </div>
+            <div class="card-trip">
+              <img src="/Images/Kanekohan_wanchai.jpeg" />
+              <div class="card-trip-infos">
+                <div>
+                  <h2>KANEKO HANNOSUKE</h2>
+                  <p>2022</p>
+                </div>
+                <h2 class="card-trip-pricing">@Wan Chai</h2>
+              </div>
+            </div>
+          </div>
+          <div class="collapse" id="collapseProject">
+              <ul class="projectlist__year">
+                <div class="projectlist__year__item d-flex align-items-center justify-content-center mb-1">
+                  <li class="turn-button"><i class="btn-rotate fa-solid fa-circle-play"  data-bs-toggle="collapse" href="#collapse2022" role="button" aria-expanded="false" aria-controls="collapse2022"></i></li>
+                  <li class="year">2022</li>
+                </div>
+                <div class="collapse" id="collapse2022">
+                  <ul class="list-content liststyle-none">
+                    <span class="list-content__divider"></span>
+                    <div class="list-content__left">
+                      <ul class="liststyle-none">
+                        <li>Don Don Donki</li>
+                        <li>鮮選壽司</li>
+                        <li>鮮選壽司</li>
+                        <li>鮮選壽司</li>
+                        <li>安田精米</li>
+                        <li>牛八和牛燒肉屋 & 日牛涮涮鍋</li>
+                        <li>金子半之助 & 饗和民</li>
+                        <li>金子半之助</li>
+                        <li>天丼てんや</li>
+                        <li>天丼てんや</li>
+                        <li>天丼てんや</li>
+                        <li>伝説のすた丼屋 & 京都抹茶庵</li>
+                      </ul>
+                    </div>
+                    <div class="list-content__right">
+                      <ul class="liststyle-none">
+                        <li>黃埔</li>
+                        <li>黃埔</li>
+                        <li>小西灣</li>
+                        <li>銅鑼灣</li>
+                        <li>尖沙咀</li>
+                        <li>鑽石山</li>
+                        <li>荃灣</li>
+                        <li>奧海城</li>
+                        <li>元朗</li>
+                        <li>屯門</li>
+                        <li>黃埔</li>
+                        <li>葵芳</li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+
+                <div class="projectlist__year__item d-flex align-items-center justify-content-center mb-1">
+                  <li class="turn-button"><i class="btn-rotate fa-solid fa-circle-play"  data-bs-toggle="collapse" href="#collapse2021" role="button" aria-expanded="false" aria-controls="collapse2021"></i></li>
+                  <li class="year">2021</li>
+                </div>
+                <div class="collapse" id="collapse2021">
+                  <ul class="list-content liststyle-none">
+                    <span class="list-content__divider"></span>
+                    <div class="list-content__left">
+                      <ul class="liststyle-none">
+                        <li>上村牧場燒肉店</li>
+                        <li>Don Don Donki</li>
+                        <li>Don Don Donki</li>
+                        <li>燒肉一朗</li>
+                        <li>燒肉一朗</li>
+                        <li>日牛涮涮鍋</li>
+                        <li>Panash</li>
+                        <li>梅丘壽司美登利</li>
+                        <li>合味道紀念館香港</li>
+                        <li>八番麵工房</li>
+                        <li>牛八和牛燒肉屋 Express</li>
+                      </ul>
+                    </div>
+                    <div class="list-content__right">
+                      <ul class="liststyle-none">
+                        <li>銅鑼灣</li>
+                        <li>九龍灣</li>
+                        <li>屯門</li>
+                        <li>銅鑼灣</li>
+                        <li>將軍澳</li>
+                        <li>將軍澳</li>
+                        <li>馬鞍山</li>
+                        <li>尖沙咀</li>
+                        <li>尖沙咀</li>
+                        <li>上水</li>
+                        <li>尖沙咀</li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+
+                <div class="projectlist__year__item d-flex align-items-center justify-content-center mb-1">
+                  <li class="turn-button"><i class="btn-rotate fa-solid fa-circle-play"  data-bs-toggle="collapse" href="#collapse2020" role="button" aria-expanded="false" aria-controls="collapse2020"></i></li>
+                  <li class="year">2020</li>
+                </div>
+                <div class="collapse" id="collapse2020">
+                  <ul class="list-content liststyle-none">
+                    <span class="list-content__divider"></span>
+                    <div class="list-content__left">
+                      <ul class="liststyle-none">
+                        <li>Don Don Donki</li>
+                        <li>Don Don Donki</li>
+                        <li>Don Don Donki</li>
+                        <li>鳥匠</li>
+                        <li>燒肉一朗</li>
+                        <li>燒肉かくら</li>
+                        <li>日牛涮涮鍋</li>
+                        <li>天丼てんや</li>
+                        <li>Chateraise</li>
+                        <li>Chateraise</li>
+                        <li>Chateraise</li>
+                        <li>すき家</li>
+                      </ul>
+                    </div>
+                    <div class="list-content__right">
+                      <ul class="liststyle-none">
+                        <li>中環</li>
+                        <li>銅鑼灣</li>
+                        <li>山頂</li>
+                        <li>中環</li>
+                        <li>佐敦</li>
+                        <li>黃埔</li>
+                        <li>荃灣</li>
+                        <li>將軍澳</li>
+                        <li>尖沙咀</li>
+                        <li>灣仔</li>
+                        <li>荃灣</li>
+                        <li>黃埔</li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+
+                <div class="projectlist__year__item d-flex align-items-center justify-content-center mb-1">
+                  <li class="turn-button"><i class="btn-rotate fa-solid fa-circle-play"  data-bs-toggle="collapse" href="#collapse2019" role="button" aria-expanded="false" aria-controls="collapse2019"></i></li>
+                  <li class="year">2019</li>
+                </div>
+                <div class="collapse" id="collapse2019">
+                  <ul class="list-content liststyle-none">
+                    <span class="list-content__divider"></span>
+                    <div class="list-content__left">
+                      <ul class="liststyle-none">
+                        <li>美人鍋</li>
+                        <li>饗和民</li>
+                        <li>すし志魂</li>
+                        <li>Chateraise</li>
+                        <li>I-creame</li>
+                        <li>居酒屋 和民</li>
+                        <li>Panash</li>
+                        <li>すき家</li>
+                        <li>峰壽司</li>
+                        <li>梅丘壽司美登利</li>
+                      </ul>
+                    </div>
+                    <div class="list-content__right">
+                      <ul class="liststyle-none">
+                        <li>觀塘</li>
+                        <li>中環</li>
+                        <li>中環</li>
+                        <li>東涌</li>
+                        <li>東涌</li>
+                        <li>九龍灣</li>
+                        <li>樂富</li>
+                        <li>旺角</li>
+                        <li>南昌</li>
+                        <li>沙田</li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+
+                <div class="projectlist__year__item d-flex align-items-center justify-content-center mb-1">
+                  <li class="turn-button"><i class="btn-rotate fa-solid fa-circle-play"  data-bs-toggle="collapse" href="#collapse2018" role="button" aria-expanded="false" aria-controls="collapse2018"></i></li>
+                  <li class="year">2018</li>
+                </div>
+                <div class="collapse" id="collapse2018">
+                  <ul class="list-content liststyle-none">
+                    <span class="list-content__divider"></span>
+                    <div class="list-content__left">
+                      <ul class="liststyle-none">
+                        <li>春水堂</li>
+                        <li>YAKINIKU GREAT SOHO</li>
+                        <li>大阪燒肉 Futago</li>
+                        <li>道頓堀御好燒專門店</li>
+                        <li>Mos Burger</li>
+                        <li>Mos Burger</li>
+                        <li>梅丘壽司美登利</li>
+                        <li>梅丘壽司美登利</li>
+                        <li>名代宇奈備長炭燒鰻魚飯專門店</li>
+                        <li>名代宇奈備長炭燒鰻魚飯專門店</li>
+                        <li>三和敍</li>
+                        <li>天丼てんや</li>
+                      </ul>
+                    </div>
+                    <div class="list-content__right">
+                      <ul class="liststyle-none">
+                        <li>觀塘</li>
+                        <li>中環</li>
+                        <li>銅鑼灣</li>
+                        <li>銅鑼灣</li>
+                        <li>葵涌</li>
+                        <li>馬鞍山</li>
+                        <li>旺角</li>
+                        <li>青衣</li>
+                        <li>尖沙咀</li>
+                        <li>銅鑼灣</li>
+                        <li>九龍城</li>
+                        <li>青衣</li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+
+                <li class="text-right">We have more and more experience...</li>
+              </ul>
+          </div>
+          <a class="button bg-red btn-moreinfo" data-bs-toggle="collapse" href="#collapseProject" role="button" aria-expanded="false" aria-controls="collapseProject">More Info</a>
+        </div>
+      </section>
+      <section class="contact container" id="contact">
+        <div class="section-subtitle">
+          <h2 class="section-title">CONTACT</h2>
+        </div>
+        <div class="contact__item">
+          <div class="contact__item__text">
+            <h3>Kumi Ken Company Limited</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Room 03, Floor 13, Java Commercial Centre,<br>128 Java Road, North Point, Hong Kong</p>
+            <p><i class="fa-solid fa-phone-volume"></i> +852-2889-8233</p>
+            <p><i class="fa-solid fa-envelope"></i> lee@kumiken.com.hk (Contact: Ms.Lee)</p>
+          </div>
+          <!-- <div class="map"> -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.906075709825!2d114.19981342850669!3d22.292217098725484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404010527f146fb%3A0x7e618b71d9af25a2!2sJava%20Commercial%20Centre%2C%20124-132%20Java%20Rd%2C%20North%20Point%2C%20Hong%20Kong!5e0!3m2!1sen!2sjp!4v1672377048674!5m2!1sen!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="footer bg-red">
+        <a href="#home">
+          <img src="images/logo_full.png" alt="">
+        </a>
+        <p>&copy;Kumi Ken Company Limited</p>
+      </section>
     </div>
-    <section class="mainvisual">
-      <div class="mainvisual__item container">
-        <div class="mainvisual__item__textbox">
-          <span class="bd-top side"></span>
-          <span class="bd-left upright"></span>
-          <span class="bd-right upright"></span>
-          <span class="bd-bottom side"></span>
-          <div class="textarea">
-            <h1>KITCHEN<h1>
-          </div>
-          <div class="textarea">
-            <h1>ALL-ROUNDER</h1>
-          </div>
-          <div class="textarea">
-            <h1>KUMIKEN</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="about container" id="about">
-      <div class="section-subtitle">
-        <h2 class="section-title">ABOUT US</h2>
-      </div>
-      <div class="about__item">
-        <div class="about__item__content">
-          <div class="about__item__content__text">
-            <p>In 1990, being one of the pioneer in the commercial kitchen solutions history, Kumi Ken COMPANY LIMITED was established.<br>Kumi Ken provides custom made stainless steel appliances such as Hydro-Vent Hood System, S.S. stoves, S.S. cabinets, S.S. tables and S.S sinks etc.<br>Design, supply and install for restaurants, catering services business with wide range of quality equitments.<br>
-              Since, Kumi Ken Co. Ltd. was focused on the Stainless Steel products for Chinese Restaurants Projects in Hong Kong and China.<br>To catch with the faster growth in these areas, and Commercial Refrigerators, Hydro-Vent Hood System, Auto-noodel boiler, Oven etc.were needed.<br>KumiKen extends the business scopes to Janpanese Restaurants, Korean Restaurants and Chain-Supermarket.<br>
-              Nowaday, Following the trend of F&B industry, Automated Food Delivery System, especially “Bullet Train Delivery System (Sushi Train)” and “Sushi Conveyor Belt”.<br>We provide a "One-stop" Solution for all architecture and kitchen design firms.</p>
-          </div>
-          <div class="about__item__content__img">
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="works container" id="works">
-      <div class="section-subtitle">
-        <h2 class="section-title">WORKS</h2>
-      </div>
-      <div class="works__item">
-        <div class="works__item__design">
-          <div class="card-works" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://source.unsplash.com/M_NvKwSOkug)">
-            <div class="card-works__text">
-              <div class="default">
-                <h3>Kitchen Design</h3>
-              </div>
-              <div class="hovering">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, similique! Porro assumenda mollitia pariatur id quis magnam nemo, natus reprehenderit cumque placeat numquam maxime eius rerum est quaerat delectus quisquam?</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="works__item__installation">
-          <div class="card-works" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://source.unsplash.com/NfG4rXmceFM)">
-            <div class="card-works__text">
-              <div class="default">
-                <h3>Equipment Installation</h3>
-              </div>
-              <div class="hovering">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, similique! Porro assumenda mollitia pariatur id quis magnam nemo, natus reprehenderit cumque placeat numquam maxime eius rerum est quaerat delectus quisquam?</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="works__item__maintenance">
-          <div class="card-works" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://source.unsplash.com/32PpagSzeGs)">
-            <div class="card-works__text">
-              <div class="default">
-                <h3>Maintenance</h3>
-              </div>
-              <div class="hovering">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, similique! Porro assumenda mollitia pariatur id quis magnam nemo, natus reprehenderit cumque placeat numquam maxime eius rerum est quaerat delectus quisquam?</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="works__item__fabrication">
-          <div class="card-works" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://source.unsplash.com/SVfXlChg9HI)">
-            <div class="card-works__text">
-              <div class="default">
-                <h3>Stainless Fabrication</h3>
-              </div>
-              <div class="hovering">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, similique! Porro assumenda mollitia pariatur id quis magnam nemo, natus reprehenderit cumque placeat numquam maxime eius rerum est quaerat delectus quisquam?</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="project container" id="projects">
-      <div class="section-subtitle">
-        <h2 class="section-title">PROJECTS</h2>
-      </div>
-      <div class="project__item">
-        <div class="project__item__card">
-          <div class="card-trip">
-            <img src="/Images/Watami_TW.jpeg" />
-            <div class="card-trip-infos">
-              <div>
-                <h2>WATAMI YAKINIKU</h2>
-                <p>2022</p>
-              </div>
-              <h2 class="card-trip-pricing">@Tsuen Wan</h2>
-            </div>
-          </div>
-          <div class="card-trip">
-            <img src="/Images/Kanekohan_wanchai.jpeg" />
-            <div class="card-trip-infos">
-              <div>
-                <h2>KANEKO HANNOSUKE</h2>
-                <p>2022</p>
-              </div>
-              <h2 class="card-trip-pricing">@Wan Chai</h2>
-            </div>
-          </div>
-        </div>
-        <div class="collapse" id="collapseProject">
-            <ul class="projectlist__year">
-              <div class="projectlist__year__item d-flex align-items-center justify-content-center mb-1">
-                <li class="turn-button"><i class="btn-rotate fa-solid fa-circle-play"  data-bs-toggle="collapse" href="#collapse2022" role="button" aria-expanded="false" aria-controls="collapse2022"></i></li>
-                <li class="year">2022</li>
-              </div>
-              <div class="collapse" id="collapse2022">
-                <ul class="list-content liststyle-none">
-                  <span class="list-content__divider"></span>
-                  <div class="list-content__left">
-                    <ul class="liststyle-none">
-                      <li>Don Don Donki</li>
-                      <li>鮮選壽司</li>
-                      <li>鮮選壽司</li>
-                      <li>鮮選壽司</li>
-                      <li>安田精米</li>
-                      <li>牛八和牛燒肉屋 & 日牛涮涮鍋</li>
-                      <li>金子半之助 & 饗和民</li>
-                      <li>金子半之助</li>
-                      <li>天丼てんや</li>
-                      <li>天丼てんや</li>
-                      <li>天丼てんや</li>
-                      <li>伝説のすた丼屋 & 京都抹茶庵</li>
-                    </ul>
-                  </div>
-                  <div class="list-content__right">
-                    <ul class="liststyle-none">
-                      <li>黃埔</li>
-                      <li>黃埔</li>
-                      <li>小西灣</li>
-                      <li>銅鑼灣</li>
-                      <li>尖沙咀</li>
-                      <li>鑽石山</li>
-                      <li>荃灣</li>
-                      <li>奧海城</li>
-                      <li>元朗</li>
-                      <li>屯門</li>
-                      <li>黃埔</li>
-                      <li>葵芳</li>
-                    </ul>
-                  </div>
-                </ul>
-              </div>
-
-              <div class="projectlist__year__item d-flex align-items-center justify-content-center mb-1">
-                <li class="turn-button"><i class="btn-rotate fa-solid fa-circle-play"  data-bs-toggle="collapse" href="#collapse2021" role="button" aria-expanded="false" aria-controls="collapse2021"></i></li>
-                <li class="year">2021</li>
-              </div>
-              <div class="collapse" id="collapse2021">
-                <ul class="list-content liststyle-none">
-                  <span class="list-content__divider"></span>
-                  <div class="list-content__left">
-                    <ul class="liststyle-none">
-                      <li>上村牧場燒肉店</li>
-                      <li>Don Don Donki</li>
-                      <li>Don Don Donki</li>
-                      <li>燒肉一朗</li>
-                      <li>燒肉一朗</li>
-                      <li>日牛涮涮鍋</li>
-                      <li>Panash</li>
-                      <li>梅丘壽司美登利</li>
-                      <li>合味道紀念館香港</li>
-                      <li>八番麵工房</li>
-                      <li>牛八和牛燒肉屋 Express</li>
-                    </ul>
-                  </div>
-                  <div class="list-content__right">
-                    <ul class="liststyle-none">
-                      <li>銅鑼灣</li>
-                      <li>九龍灣</li>
-                      <li>屯門</li>
-                      <li>銅鑼灣</li>
-                      <li>將軍澳</li>
-                      <li>將軍澳</li>
-                      <li>馬鞍山</li>
-                      <li>尖沙咀</li>
-                      <li>尖沙咀</li>
-                      <li>上水</li>
-                      <li>尖沙咀</li>
-                    </ul>
-                  </div>
-                </ul>
-              </div>
-
-              <div class="projectlist__year__item d-flex align-items-center justify-content-center mb-1">
-                <li class="turn-button"><i class="btn-rotate fa-solid fa-circle-play"  data-bs-toggle="collapse" href="#collapse2020" role="button" aria-expanded="false" aria-controls="collapse2020"></i></li>
-                <li class="year">2020</li>
-              </div>
-              <div class="collapse" id="collapse2020">
-                <ul class="list-content liststyle-none">
-                  <span class="list-content__divider"></span>
-                  <div class="list-content__left">
-                    <ul class="liststyle-none">
-                      <li>Don Don Donki</li>
-                      <li>Don Don Donki</li>
-                      <li>Don Don Donki</li>
-                      <li>鳥匠</li>
-                      <li>燒肉一朗</li>
-                      <li>燒肉かくら</li>
-                      <li>日牛涮涮鍋</li>
-                      <li>天丼てんや</li>
-                      <li>Chateraise</li>
-                      <li>Chateraise</li>
-                      <li>Chateraise</li>
-                      <li>すき家</li>
-                    </ul>
-                  </div>
-                  <div class="list-content__right">
-                    <ul class="liststyle-none">
-                      <li>中環</li>
-                      <li>銅鑼灣</li>
-                      <li>山頂</li>
-                      <li>中環</li>
-                      <li>佐敦</li>
-                      <li>黃埔</li>
-                      <li>荃灣</li>
-                      <li>將軍澳</li>
-                      <li>尖沙咀</li>
-                      <li>灣仔</li>
-                      <li>荃灣</li>
-                      <li>黃埔</li>
-                    </ul>
-                  </div>
-                </ul>
-              </div>
-
-              <div class="projectlist__year__item d-flex align-items-center justify-content-center mb-1">
-                <li class="turn-button"><i class="btn-rotate fa-solid fa-circle-play"  data-bs-toggle="collapse" href="#collapse2019" role="button" aria-expanded="false" aria-controls="collapse2019"></i></li>
-                <li class="year">2019</li>
-              </div>
-              <div class="collapse" id="collapse2019">
-                <ul class="list-content liststyle-none">
-                  <span class="list-content__divider"></span>
-                  <div class="list-content__left">
-                    <ul class="liststyle-none">
-                      <li>美人鍋</li>
-                      <li>饗和民</li>
-                      <li>すし志魂</li>
-                      <li>Chateraise</li>
-                      <li>I-creame</li>
-                      <li>居酒屋 和民</li>
-                      <li>Panash</li>
-                      <li>すき家</li>
-                      <li>峰壽司</li>
-                      <li>梅丘壽司美登利</li>
-                    </ul>
-                  </div>
-                  <div class="list-content__right">
-                    <ul class="liststyle-none">
-                      <li>觀塘</li>
-                      <li>中環</li>
-                      <li>中環</li>
-                      <li>東涌</li>
-                      <li>東涌</li>
-                      <li>九龍灣</li>
-                      <li>樂富</li>
-                      <li>旺角</li>
-                      <li>南昌</li>
-                      <li>沙田</li>
-                    </ul>
-                  </div>
-                </ul>
-              </div>
-
-              <div class="projectlist__year__item d-flex align-items-center justify-content-center mb-1">
-                <li class="turn-button"><i class="btn-rotate fa-solid fa-circle-play"  data-bs-toggle="collapse" href="#collapse2018" role="button" aria-expanded="false" aria-controls="collapse2018"></i></li>
-                <li class="year">2018</li>
-              </div>
-              <div class="collapse" id="collapse2018">
-                <ul class="list-content liststyle-none">
-                  <span class="list-content__divider"></span>
-                  <div class="list-content__left">
-                    <ul class="liststyle-none">
-                      <li>春水堂</li>
-                      <li>YAKINIKU GREAT SOHO</li>
-                      <li>大阪燒肉 Futago</li>
-                      <li>道頓堀御好燒專門店</li>
-                      <li>Mos Burger</li>
-                      <li>Mos Burger</li>
-                      <li>梅丘壽司美登利</li>
-                      <li>梅丘壽司美登利</li>
-                      <li>名代宇奈備長炭燒鰻魚飯專門店</li>
-                      <li>名代宇奈備長炭燒鰻魚飯專門店</li>
-                      <li>三和敍</li>
-                      <li>天丼てんや</li>
-                    </ul>
-                  </div>
-                  <div class="list-content__right">
-                    <ul class="liststyle-none">
-                      <li>觀塘</li>
-                      <li>中環</li>
-                      <li>銅鑼灣</li>
-                      <li>銅鑼灣</li>
-                      <li>葵涌</li>
-                      <li>馬鞍山</li>
-                      <li>旺角</li>
-                      <li>青衣</li>
-                      <li>尖沙咀</li>
-                      <li>銅鑼灣</li>
-                      <li>九龍城</li>
-                      <li>青衣</li>
-                    </ul>
-                  </div>
-                </ul>
-              </div>
-
-              <li class="text-right">We have more and more experience...</li>
-            </ul>
-        </div>
-        <a class="button bg-red btn-moreinfo" data-bs-toggle="collapse" href="#collapseProject" role="button" aria-expanded="false" aria-controls="collapseProject">More Info</a>
-      </div>
-    </section>
-    <section class="contact container" id="contact">
-      <div class="section-subtitle">
-        <h2 class="section-title">CONTACT</h2>
-      </div>
-      <div class="contact__item">
-        <div class="contact__item__text">
-          <h3>Kumi Ken Company Limited</h3>
-          <p><i class="fa-solid fa-location-dot"></i> Room 03, Floor 13, Java Commercial Centre,<br>128 Java Road, North Point, Hong Kong</p>
-          <p><i class="fa-solid fa-phone-volume"></i> +852-2889-8233</p>
-          <p><i class="fa-solid fa-envelope"></i> lee@kumiken.com.hk (Contact: Ms.Lee)</p>
-        </div>
-        <!-- <div class="map"> -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.906075709825!2d114.19981342850669!3d22.292217098725484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404010527f146fb%3A0x7e618b71d9af25a2!2sJava%20Commercial%20Centre%2C%20124-132%20Java%20Rd%2C%20North%20Point%2C%20Hong%20Kong!5e0!3m2!1sen!2sjp!4v1672377048674!5m2!1sen!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <!-- </div> -->
-        </div>
-      </div>
-    </section>
-    <section class="footer bg-red">
-      <img src="images/logo_full.png" alt="">
-      <p>&copy;Kumi Ken Company Limited</p>
-    </section>
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

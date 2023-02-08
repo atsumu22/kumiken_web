@@ -37,6 +37,7 @@
             @include animation(
               $name: bd-side-transition,
               $duration: 2s,
+              $delay: 1.8s,
             );
             @keyframes bd-side-transition {
               0% {
@@ -56,7 +57,7 @@
             @include animation(
               $name: bd-side-transition,
               $duration: 2s,
-              $delay: 2s,
+              $delay: 3.8s,
             );
             @keyframes bd-side-transition {
               0% {
@@ -83,6 +84,7 @@
             @include animation(
               $name: bd-upright-transition,
               $duration: 2s,
+              $delay: 1.8s,
             );
             @keyframes bd-upright-transition {
               0% {
@@ -102,7 +104,7 @@
             @include animation(
               $name: bd-upright-transition,
               $duration: 2s,
-              $delay: 2s,
+              $delay: 3.8s,
             );
             @keyframes bd-upright-transition {
               0% {
@@ -143,7 +145,8 @@
           // filter: drop-shadow(1px 1px 8px #c0c0c0);
           @include animation(
             $name: appear,
-            $duration: 5s
+            $duration: 5s,
+            $delay: 1.8s
           );
           @keyframes appear {
             0% {

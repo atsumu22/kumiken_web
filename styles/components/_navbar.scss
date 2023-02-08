@@ -8,8 +8,12 @@
   width: 100%;
   z-index: 100;
   box-shadow: 0 0 20px rgb(0 0 0 / 60%);
-  & img {
+  & > a {
+    display: inline-block;
     height: 100%;
+    & img {
+      height: 100%;
+    }
   }
   &.menu-open {
   box-shadow: none;

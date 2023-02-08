@@ -104,7 +104,11 @@
     height: 70px;
   }
 }
-.navbar img {
+.navbar > a {
+  display: inline-block;
+  height: 100%;
+}
+.navbar > a img {
   height: 100%;
 }
 .navbar.menu-open {
@@ -157,7 +161,7 @@ a {
 }
 
 p {
-  font-family: "Lora", "Coda", "Noto Sans JP", serif, "Noto Sans HK", sans-serif;
+  font-family: "Coda", "Noto Sans JP", serif, "Noto Sans HK", sans-serif;
   font-size: 1.2rem;
 }
 
@@ -231,7 +235,7 @@ li i {
   animation-name: bd-side-transition;
   animation-duration: 2s;
   animation-timing-function: ease;
-  animation-delay: 0s;
+  animation-delay: 1.8s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -252,7 +256,7 @@ li i {
   animation-name: bd-side-transition;
   animation-duration: 2s;
   animation-timing-function: ease;
-  animation-delay: 2s;
+  animation-delay: 3.8s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -280,7 +284,7 @@ li i {
   animation-name: bd-upright-transition;
   animation-duration: 2s;
   animation-timing-function: ease;
-  animation-delay: 0s;
+  animation-delay: 1.8s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -301,7 +305,7 @@ li i {
   animation-name: bd-upright-transition;
   animation-duration: 2s;
   animation-timing-function: ease;
-  animation-delay: 2s;
+  animation-delay: 3.8s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -327,7 +331,7 @@ li i {
   animation-name: appear;
   animation-duration: 5s;
   animation-timing-function: ease;
-  animation-delay: 0s;
+  animation-delay: 1.8s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -648,14 +652,14 @@ li i {
 .list-content__divider {
   content: "";
   width: 4px;
-  height: 320px;
+  height: 240px;
   display: inline-block;
   margin: 0 auto;
   background-color: #fc0805;
 }
 @media screen and (min-width: 960px) {
   .list-content__divider {
-    height: 200px;
+    height: 320px;
   }
 }
 .list-content__left {
