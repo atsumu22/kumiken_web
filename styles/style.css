@@ -452,6 +452,7 @@ li i {
   height: 180px;
   justify-content: center;
   align-items: center;
+  padding-top: 60px;
 }
 .card-works__text.clicked {
   transform: translateY(-50%);
