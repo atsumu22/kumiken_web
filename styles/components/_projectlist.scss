@@ -1,5 +1,6 @@
 @use "../globals/mixin" as *;
 @use "../globals/variables" as *;
+@use "../globals/mq" as *;
 
 
 .projectlist__year {
@@ -15,10 +16,16 @@
       }
     }
     & .year {
+      @include mq(md) {
+      right: 42%;
+      }
+      @include mq(lg) {
+        right: 43%;
+        }
       font-size: 1.8rem;
       position: absolute;
       top: 50%;
-      right: 45%;
+      right: 38%;
       transform: translate(50%, -50%);
     }
   }

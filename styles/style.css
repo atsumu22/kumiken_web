@@ -608,8 +608,18 @@ li i {
   font-size: 1.8rem;
   position: absolute;
   top: 50%;
-  right: 45%;
+  right: 38%;
   transform: translate(50%, -50%);
+}
+@media screen and (min-width: 960px) {
+  .projectlist__year__item .year {
+    right: 42%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .projectlist__year__item .year {
+    right: 43%;
+  }
 }
 
 .projectlist__content {
