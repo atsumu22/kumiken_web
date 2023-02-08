@@ -608,7 +608,7 @@ li i {
   font-size: 1.8rem;
   position: absolute;
   top: 50%;
-  right: 30%;
+  right: 20%;
   transform: translate(50%, -50%);
 }
 @media screen and (min-width: 960px) {
