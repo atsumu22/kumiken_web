@@ -670,7 +670,12 @@ li i {
   animation-fill-mode: forwards;
 }
 .list-content__left > ul > li {
-  font-size: 1rem;
+  font-size: 0.5rem;
+}
+@media screen and (min-width: 960px) {
+  .list-content__left > ul > li {
+    font-size: 1rem;
+  }
 }
 @keyframes list-slide-left {
   0% {
