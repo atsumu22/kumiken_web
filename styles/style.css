@@ -654,7 +654,7 @@ li i {
 }
 @media screen and (min-width: 960px) {
   .list-content__divider {
-    height: 250px;
+    height: 200px;
   }
 }
 .list-content__left {

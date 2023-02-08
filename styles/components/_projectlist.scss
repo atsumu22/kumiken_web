@@ -57,7 +57,7 @@
     width: 4px;
     height: 320px;
     @include mq(md) {
-      height: 250px;
+      height: 200px;
     }
     display: inline-block;
     margin: 0 auto;
