@@ -622,10 +622,10 @@ li i {
 }
 
 .section-subtitle {
-  text-align: center;
+  text-align: left;
   width: 300px;
   padding: 5px;
-  margin: 80px auto 30px auto;
+  margin: 80px auto 30px 0px;
   overflow: hidden;
   position: relative;
 }
@@ -635,7 +635,7 @@ li i {
 }
 .section-subtitle h2:after {
   content: "";
-  width: 320px;
+  width: 200px;
   height: 7px;
   display: inline-block;
   position: absolute;
@@ -658,7 +658,7 @@ li i {
     transform: translateX(-200%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-90%);
   }
 }
 
@@ -857,6 +857,9 @@ li i {
   opacity: 0.7;
 }
 
+.about__item__content__text p {
+  margin-left: 30px;
+}
 @media screen and (min-width: 960px) {
   .about__item__content__text p {
     font-size: 1.5rem;
