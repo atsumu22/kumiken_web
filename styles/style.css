@@ -825,9 +825,9 @@ li i {
 }
 #loading > .loading-logo {
   position: absolute;
-  bottom: 5%;
+  bottom: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .loaded {
