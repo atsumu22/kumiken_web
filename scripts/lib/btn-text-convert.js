@@ -1,11 +1,12 @@
 const infoButton = document.querySelector('.btn-moreinfo');
-const curText = infoButton.innerText
+const infoButtonText = document.querySelector('.info-target');
+const curText = infoButtonText.innerText
 
 infoButton.addEventListener("click", (event) => {
   if(event.currentTarget.innerText == curText){
-    infoButton.innerText = "Close";
+    infoButtonText.innerText = "Close";
   }
   else {
-    infoButton.innerText = curText
+    infoButtonText.innerText = curText
   };
 });

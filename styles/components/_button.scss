@@ -1,16 +1,21 @@
 @use '../globals/variables' as *;
 
 .button {
+  text-align: center;
   width: 250px;
-  margin: 0 auto;
   display: inline-block;
   text-decoration: none;
   padding: 18px 50px;
-  border-radius: 5px;
+  border-radius: 50px;
   position: relative;
   color: white;
   cursor: pointer;
   overflow: hidden;
+  & h2 {
+    font-family: 'Inter', 'Noto Sans HK', sans-serif;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
   &:hover {
     color: white;
   }

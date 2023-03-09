@@ -1,0 +1,24 @@
+.project__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 20px;
+    &__img {
+      width: 400px;
+      height: 400px;
+      margin-bottom: 10px;
+      & img {
+        height: 400px;
+        object-fit: cover;
+        border-radius: 30px;
+      }
+    }
+    &__text {
+      padding: 15px;
+    }
+  }
+}

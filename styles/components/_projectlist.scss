@@ -7,10 +7,11 @@
   list-style: none;
   padding-left: 0;
   width: 100%;
-  text-align: center;
+  text-align: left;
   &__item {
     position: relative;
     & .turn-button {
+      width: 36px;
       & > i {
         font-size: 2rem;
       }
@@ -23,10 +24,6 @@
         right: 43%;
         }
       font-size: 1.8rem;
-      position: absolute;
-      top: 50%;
-      right: 28%;
-      transform: translate(50%, -50%);
     }
   }
 }
@@ -56,48 +53,20 @@
     content: "";
     width: 4px;
     height: 240px;
+    margin-left: 16px;
     @include mq(md) {
       height: 320px;
     }
     display: inline-block;
-    margin: 0 auto;
     background-color: $cKumikenRed;
-  }
-  &__left {
-    overflow: hidden;
-    text-align: right;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-105%, -50%);
-    & > ul {
-      & > li {
-        font-size: 0.78rem;
-        @include mq(md) {
-          font-size: 1rem;
-          }
-      }
-      @include animation(
-      $name: list-slide-left,
-      $duration: 1.2s,
-      );
-      @keyframes list-slide-left {
-        0% {
-          transform: translateX(100%);
-        }
-        100% {
-          transform: translateX(0%);
-        }
-      }
-    }
   }
   &__right {
     overflow: hidden;
     text-align: left;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(35%, -50%);
+    left: 36px;
+    top: 0;
+    // transform: translate();
     & > ul {
       & > li {
         font-size: 0.78rem;
