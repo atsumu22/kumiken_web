@@ -384,38 +384,19 @@ li i {
 }
 
 .card-project {
-  margin: 0 auto;
-  overflow: hidden;
-  height: 120px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-  transition: all 0.5s;
+  padding: 5px;
+  width: 290px;
+  height: auto;
 }
-.card-project img {
-  height: 100%;
-  width: 120px;
+.card-project > img {
+  width: 290px;
+  height: 290px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-right: 15px;
+  border-radius: 30px;
 }
-.card-project h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-  text-align: left;
-}
-.card-project p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: 0.7;
-  margin-bottom: 0;
-  margin-top: 8px;
-}
-.card-project .card-project-infos {
-  padding: 16px;
+.card-project__text {
+  padding: 8px;
 }
 
 .card-works {
@@ -713,30 +694,10 @@ li i {
   }
 }
 
-.project__item {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-.project__item__card {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-right: 20px;
-}
-.project__item__card__img {
-  width: 270px;
-  height: 270px;
-  margin-bottom: 10px;
-}
-.project__item__card__img img {
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 30px;
-}
-.project__item__card__text {
-  padding: 15px;
+.swiper {
+  overflow: visible;
+  height: 360px;
+  margin-bottom: 20px;
 }
 
 .about__item__content__text {
