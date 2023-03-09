@@ -150,6 +150,12 @@
   background-color: #d9d9d9;
 }
 
+.bg-lightgray {
+  background-color: #f2f2f2;
+  padding: 10px 0 60px 0;
+  margin-top: 60px;
+}
+
 h1 {
   font-family: "Kite One", sans-serif;
   font-weight: bold;
@@ -434,11 +440,6 @@ li i {
   width: 80px;
   margin: 0 auto;
 }
-.card-works__img.install {
-  width: 90px;
-  height: 90px;
-  margin: 0 20px 0 auto;
-}
 .card-works__text {
   width: 120px;
   text-align: center;
@@ -481,6 +482,9 @@ li i {
   margin: 80px auto 30px 0px;
   overflow: hidden;
   position: relative;
+}
+.section-subtitle.work {
+  margin: 30px auto 30px 0px;
 }
 .section-subtitle h2 {
   font-size: 2.25rem;
@@ -788,7 +792,24 @@ li i {
 .contact__item {
   display: flex;
   flex-direction: column;
-  padding-bottom: 80px;
+}
+.contact__item__text {
+  position: relative;
+}
+.contact__item__text__box {
+  height: 340px;
+  position: relative;
+  margin-left: 30px;
+  text-align: left;
+}
+.contact__item__text__box h3 {
+  margin-bottom: 40px;
+}
+.contact__item__text__box p {
+  margin-bottom: 25px;
+}
+.contact__item__text__box p:last-child {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 960px) {
   .contact__item {
@@ -810,10 +831,6 @@ li i {
   .contact__item__text > p {
     scale: 1.25rem;
   }
-}
-.contact__item__text {
-  margin-top: 20px;
-  text-align: center;
 }
 
 #about {
