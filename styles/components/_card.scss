@@ -40,9 +40,9 @@
   cursor: pointer;
   position: relative;
   background-color: #fff;
-  height: 180px;
-  width: 180px;
-  padding: 16px;
+  height: 130px;
+  width: 130px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,16 +54,12 @@
   overflow: hidden;
   &__img {
     display: inline-block;
-    width: 100px;
+    width: 80px;
     margin: 0 auto;
-    &.install {
-      width: 120px;
-      height: 100px;
-      margin: 0 20px 0 auto;
     }
   }
   &__text {
-    width: 180px;
+    width: 120px;
     text-align: center;
   }
 }

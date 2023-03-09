@@ -416,9 +416,9 @@ li i {
   cursor: pointer;
   position: relative;
   background-color: #fff;
-  height: 180px;
-  width: 180px;
-  padding: 16px;
+  height: 130px;
+  width: 130px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -431,16 +431,16 @@ li i {
 }
 .card-works__img {
   display: inline-block;
-  width: 100px;
+  width: 80px;
   margin: 0 auto;
 }
 .card-works__img.install {
-  width: 120px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   margin: 0 20px 0 auto;
 }
 .card-works__text {
-  width: 180px;
+  width: 120px;
   text-align: center;
 }
 
@@ -755,7 +755,7 @@ li i {
 
 .works__item {
   position: relative;
-  height: 450px;
+  height: 340px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -763,8 +763,8 @@ li i {
 }
 .works__item__design, .works__item__installation, .works__item__maintenance, .works__item__fabrication {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 130px;
+  height: 130px;
 }
 
 .project__item {

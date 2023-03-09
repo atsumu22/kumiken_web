@@ -18,15 +18,15 @@
 
 .works__item {
   position: relative;
-  height: 450px;
+  height: 340px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   &__design, &__installation, &__maintenance, &__fabrication {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 130px;
   }
 }
 
