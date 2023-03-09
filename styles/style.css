@@ -385,12 +385,12 @@ li i {
 
 .card-project {
   padding: 5px;
-  width: 290px;
+  width: 250px;
   height: auto;
 }
 .card-project > img {
-  width: 290px;
-  height: 290px;
+  width: 250px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
@@ -695,7 +695,7 @@ li i {
 }
 
 .swiper {
-  overflow: visible;
+  overflow: hidden;
   height: 360px;
   margin-bottom: 20px;
 }
