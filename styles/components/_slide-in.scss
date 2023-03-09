@@ -1,0 +1,28 @@
+@use "../globals/mixin" as *;
+@use "../globals/variables" as *;
+
+.slide-in-bottom {
+  text-align: left;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(20%);
+  opacity: 0;
+  &.inview {
+    @include animation(
+    $name: text-slide-in-bottom,
+    $duration: 0.8s,
+    );
+    @keyframes text-slide-in-bottom {
+      0% {
+        transform: translateY(20%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+  }
+}

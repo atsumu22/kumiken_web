@@ -3,6 +3,9 @@
 .about__item {
   &__content {
     &__text {
+      position: relative;
+      overflow: hidden;
+      height: 600px;
       & p {
         margin-left: 30px;
         @include mq(lg) {
@@ -14,15 +17,16 @@
 }
 
 .works__item {
+  position: relative;
+  height: 450px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  @include mq(lg) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    &__design, &__installation, &__maintenance, &__fabrication {
-      width: 49%;
-    }
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  &__design, &__installation, &__maintenance, &__fabrication {
+    position: relative;
+    width: 200px;
+    height: 200px;
   }
 }
 

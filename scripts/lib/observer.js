@@ -1,5 +1,6 @@
 const  titles = document.querySelectorAll('.section-title');
 const  neons = document.querySelectorAll('.neon');
+const  slideIns = document.querySelectorAll('.slide-in-bottom');
 
 const cb_sv = function(entries, observer) {
   entries.forEach(entry => {
@@ -20,3 +21,4 @@ const options = {
 const io_sv = new IntersectionObserver(cb_sv, options);
 titles.forEach(title =>io_sv.observe(title));
 neons.forEach(neon =>io_sv.observe(neon));
+slideIns.forEach(slideIn =>io_sv.observe(slideIn));
