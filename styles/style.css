@@ -422,8 +422,8 @@ li i {
   cursor: pointer;
   position: relative;
   background-color: #fff;
-  height: 130px;
-  width: 130px;
+  height: 150px;
+  width: 150px;
   padding: 5px;
   display: flex;
   flex-direction: column;
@@ -725,12 +725,12 @@ li i {
   margin-right: 20px;
 }
 .project__item__card__img {
-  width: 400px;
-  height: 400px;
+  width: 270px;
+  height: 270px;
   margin-bottom: 10px;
 }
 .project__item__card__img img {
-  height: 400px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
@@ -798,7 +798,7 @@ li i {
   margin-left: 30px;
   text-align: left;
 }
-.contact__item__text__box h3 {
+.contact__item__text__box h2 {
   margin-bottom: 40px;
 }
 .contact__item__text__box p {
@@ -820,8 +820,7 @@ li i {
   .contact__item__text {
     width: 49%;
   }
-  .contact__item__text > h3 {
-    scale: 1.8rem;
+  .contact__item__text > h2 {
     margin-bottom: 30px;
   }
   .contact__item__text > p {
