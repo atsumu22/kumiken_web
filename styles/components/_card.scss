@@ -25,11 +25,15 @@
 
 .card-preproject {
   padding: 16px 10px 10px 10px;
-  width: 260px;
+  &.slide-in-bottom {
+    width: 260px;
+  }
   height: 320px;
   background-color: #fff;
   border-radius: 30px;
   margin-bottom: 16px;
+  position: relative;
+
   &__year {
     position: relative;
     font-weight: bold;
@@ -47,6 +51,17 @@
     padding: 3px;
     & > li {
       font-size: 13px;
+    }
+  }
+  &__message {
+    h2 {
+      padding: 15px;
+      width: 100%;
+      font-weight: bold;
+      position: absolute;
+      top: 30%;
+      left: 5%;
+      transform: rotate(-15deg);
     }
   }
 }

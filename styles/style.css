@@ -153,7 +153,6 @@
 .bg-lightgray {
   background-color: #f2f2f2;
   padding: 10px 0 60px 0;
-  margin-top: 60px;
 }
 
 h1 {
@@ -416,11 +415,14 @@ li i {
 
 .card-preproject {
   padding: 16px 10px 10px 10px;
-  width: 260px;
   height: 320px;
   background-color: #fff;
   border-radius: 30px;
   margin-bottom: 16px;
+  position: relative;
+}
+.card-preproject.slide-in-bottom {
+  width: 260px;
 }
 .card-preproject__year {
   position: relative;
@@ -440,6 +442,15 @@ li i {
 }
 .card-preproject > ul > li {
   font-size: 13px;
+}
+.card-preproject__message h2 {
+  padding: 15px;
+  width: 100%;
+  font-weight: bold;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  transform: rotate(-15deg);
 }
 
 .card-works {
@@ -503,12 +514,12 @@ li i {
   text-align: left;
   width: 300px;
   padding: 5px;
-  margin: 80px auto 30px 0px;
+  margin: 30px auto 5px 0px;
   overflow: hidden;
   position: relative;
 }
 .section-subtitle.work {
-  margin: 30px auto 30px 0px;
+  margin: 30px auto 5px 0px;
 }
 .section-subtitle h2 {
   font-size: 2.25rem;
@@ -765,36 +776,43 @@ li i {
   visibility: hidden;
 }
 
+.catcher {
+  margin-bottom: 20px;
+}
 .catcher__item {
+  position: relative;
   margin-top: 40px;
+  height: 200px;
+  padding: 14px 14px 20px 14px;
+  opacity: 0;
 }
 .catcher__item > h2 {
   font-weight: bold;
-  padding: 5px;
-  margin-bottom: 0;
-}
-.catcher__item__p {
-  position: relative;
-}
-.catcher__item__p > p {
-  padding: 5px;
-  font-weight: bold;
-  opacity: 0;
-  margin-bottom: 0;
+  margin-bottom: 18px;
 }
 
 .about__item__content__text {
   position: relative;
   overflow: hidden;
-  height: 600px;
+  padding: 0 14px 14px 14px;
+  height: 850px;
+  opacity: 0;
 }
-.about__item__content__text p {
-  margin-left: 30px;
+.about__item__content__text > h4 {
+  font-weight: bold;
+  margin-bottom: 18px;
 }
-@media screen and (min-width: 960px) {
-  .about__item__content__text p {
-    font-size: 1.5rem;
-  }
+
+.works__text {
+  position: relative;
+  overflow: hidden;
+  padding: 0 14px 14px 14px;
+  height: 80px;
+}
+.works__text > h4 {
+  font-weight: bold;
+  margin-bottom: 18px;
+  opacity: 0;
 }
 
 .works__item {
@@ -876,11 +894,11 @@ li i {
 }
 
 #about {
-  padding-top: 20px;
+  padding-top: 12px;
 }
 
 #works {
-  padding-top: 20px;
+  padding-top: 12px;
 }
 
 #projects {

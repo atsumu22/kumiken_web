@@ -1,39 +1,45 @@
 @use "../globals/" as *;
 
-.catcher__item {
-  margin-top: 40px;
-  & > h2 {
-    font-weight: bold;
-    padding: 5px;
-    margin-bottom: 0;
-  }
-  &__p {
+.catcher {
+  margin-bottom: 20px;
+  &__item {
     position: relative;
-    & > p {
-      padding: 5px;
+    margin-top: 40px;
+    height: 200px;
+    padding: 14px 14px 20px 14px;
+    opacity: 0;
+    & > h2 {
       font-weight: bold;
-      opacity: 0;
-      margin-bottom: 0;
+      margin-bottom: 18px;
     }
   }
 }
-
-
-
 
 .about__item {
   &__content {
     &__text {
       position: relative;
       overflow: hidden;
-      height: 600px;
-      & p {
-        margin-left: 30px;
-        @include mq(lg) {
-          font-size: 1.5rem;
-        }
+      padding: 0 14px 14px 14px;
+      height: 850px;
+      opacity: 0;
+      & > h4 {
+        font-weight: bold;
+        margin-bottom: 18px;
       }
     }
+  }
+}
+
+.works__text {
+  position: relative;
+  overflow: hidden;
+  padding: 0 14px 14px 14px;
+  height: 80px;
+  & > h4 {
+    font-weight: bold;
+    margin-bottom: 18px;
+    opacity: 0;
   }
 }
 
@@ -113,11 +119,11 @@
 }
 
 #about {
-  padding-top: 20px;
+  padding-top: 12px;
 }
 
 #works {
-  padding-top: 20px;
+  padding-top: 12px;
 }
 
 #projects {
