@@ -798,7 +798,7 @@ li i {
   height: 850px;
   opacity: 0;
 }
-.about__item__content__text > h4 {
+.about__item__content__text > h2 {
   font-weight: bold;
   margin-bottom: 18px;
 }
@@ -806,10 +806,10 @@ li i {
 .works__text {
   position: relative;
   overflow: hidden;
-  padding: 0 14px 14px 14px;
+  padding: 0 18px 18px 18px;
   height: 80px;
 }
-.works__text > h4 {
+.works__text > h2 {
   font-weight: bold;
   margin-bottom: 18px;
   opacity: 0;
