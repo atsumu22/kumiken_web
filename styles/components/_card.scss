@@ -4,16 +4,50 @@
 
 .card-project {
   padding: 5px;
-  width: 250px;
+  width: 260px;
   height: auto;
   & > img {
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
     object-fit: cover;
     border-radius: 30px;
   }
   &__text {
     padding: 8px;
+    & > h5 {
+      font-weight: 600;
+    }
+    & > h6 {
+      opacity: 0.6;
+    }
+  }
+}
+
+.card-preproject {
+  padding: 16px 10px 10px 10px;
+  width: 260px;
+  height: 320px;
+  background-color: #fff;
+  border-radius: 30px;
+  margin-bottom: 16px;
+  &__year {
+    position: relative;
+    font-weight: bold;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: $cKumikenGrey;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  & > ul {
+    padding: 3px;
+    & > li {
+      font-size: 13px;
+    }
   }
 }
 

@@ -1,5 +1,26 @@
 @use "../globals/" as *;
 
+.catcher__item {
+  margin-top: 40px;
+  & > h2 {
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 0;
+  }
+  &__p {
+    position: relative;
+    & > p {
+      padding: 5px;
+      font-weight: bold;
+      opacity: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+
 .about__item {
   &__content {
     &__text {
@@ -53,15 +74,18 @@
   &__text {
     position: relative;
     &__box {
-      height: 340px;
+      height: 280px;
       position: relative;
       margin-left: 30px;
       text-align: left;
-      & h2 {
+      & h4 {
+        font-size: 28px;
         margin-bottom: 40px;
+        font-weight: bold;
       }
       & p {
-        margin-bottom: 25px;
+        font-size: 16px;
+        margin-bottom: 3px;
         &:last-child {
           margin-bottom: 0;
         }
