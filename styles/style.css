@@ -68,6 +68,60 @@
   text-align: center;
   transition: all 0.8s ease-in-out;
 }
+.hamburger-hidden__logo {
+  width: 50px;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  transform: rotate(-65deg);
+  animation-name: logo-arrow;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes logo-arrow {
+  0% {
+    transform: translate(0, 0) rotate(-65deg);
+  }
+  99% {
+    transform: translate(-70vw, 78vh) rotate(-65deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-70vw, 78vh) rotate(-65deg);
+  }
+}
+.hamburger-hidden__logo::after {
+  content: "";
+  width: 5px;
+  height: 0vh;
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  transform: translate(-50%, -50%) rotate(90deg);
+  animation-name: bar-arrow;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes bar-arrow {
+  0% {
+    height: 0vh;
+  }
+  99% {
+    height: 100vh;
+  }
+  100% {
+    height: 100vh;
+  }
+}
 .hamburger-hidden__content {
   position: absolute;
   top: 50%;
