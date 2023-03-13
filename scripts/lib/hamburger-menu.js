@@ -1,6 +1,7 @@
 const isTouchable = "ontouchstart" in window || (window.DocumentTouch && document instanceof DocumentTouch);
 const hamburger = document.querySelector(".hamburger")
 const hidden_menu = document.querySelector(".hamburger-hidden")
+const hidden_bg = document.querySelector(".background-hidden")
 const navbar = document.querySelector(".navbar")
 const link_tags = document.querySelectorAll(".link-tag")
 
@@ -21,6 +22,7 @@ if (isTouchable) {
 link_tags.forEach((tag) => {
   tag.addEventListener("click", (event) => {
     hidden_menu.classList.remove('menu-open');
+    hidden_bg.classList.remove('menu-open');
     hamburger.classList.remove('menu-open');
     navbar.classList.remove('menu-open');
   });
